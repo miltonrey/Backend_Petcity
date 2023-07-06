@@ -3,7 +3,7 @@ WORKDIR /app
 
 COPY . .
 
-RUN ./mvnw install --also-make -DskipTests --batch-mode --no-transfer-progress
+RUN sh -c './mvnw install --also-make -DskipTests --batch-mode --no-transfer-progress'
 
-EXPOSE 8081
-CMD ./mvnw  -am spring-boot:run
+EXPOSE 5000
+CMD sh -c './mvnw -am spring-boot:run'
