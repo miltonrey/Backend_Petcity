@@ -1,6 +1,6 @@
-create database foodtainer_db;
+create database Petcity;
 
-use foodtainer_db;
+use Petcity;
 
 create table departament(
  id_departament int(12) not null auto_increment,
